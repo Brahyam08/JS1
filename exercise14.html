@@ -8,10 +8,22 @@
 </head>
 <body>
     <script>
-         let metros=parseInt(window.prompt('Escriba una medida :'))
+         /*let metros=parseInt(window.prompt('Escriba una medida :'))
          let tiempo=parseInt(window.prompt('Escriba una medida de tiempo: '))
         console.log(metros/tiempo)
-        console.log((metros/1000)/(tiempo/3600))
-</script>
+        console.log((metros/1000)/(tiempo/3600)) */
+
+        let metros=parseInt(window.prompt('Escriba una medida :'));
+        let tiempoH=parseInt(window.prompt('Escriba una hora :'));
+        let tiempoM=parseInt(window.prompt('Escriba una minutos:'));
+        let tiempoS=parseInt(window.prompt('Escriba una segundos :'));
+
+        let t1 = timepoH*3600 + timepoM*60 + tiempoS;
+        let t2 = tiempoH + tiempoM/60 + tiempoS/3600;
+        let y = metros / 1000;
+        
+        console.log("La velocidad en metros/segundos es " + x/t1);
+        console.log("la velocidad en Km/h es :"+ y / t2)
+    </script>
 </body>
 </html>
